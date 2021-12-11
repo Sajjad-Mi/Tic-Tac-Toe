@@ -1,4 +1,5 @@
 import './App.css';
+import Board from './Board'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
@@ -12,9 +13,9 @@ const theme = createTheme({
 });
 function App() {
   return (
-    <ThemeProvider them={theme}>
+    <ThemeProvider theme={theme}>
       <div className="App">
-      
+        <Board />
       </div>
     </ThemeProvider>
   );
