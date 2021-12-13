@@ -10,13 +10,12 @@ const useStyles=makeStyles({
   board:{
     height: 850,
     margin: '200px auto',
-    borderRadius: 5,
-    background: '#272626',
+    borderRadius: 5
   },
   item:{
     height:180,
     paddingTop: 50,
-    borderRadius: 5,
+    borderRadius: 5
   }
 
 })
@@ -26,7 +25,7 @@ function Board() {
   const [turn, setTurn] = useState(1);
   const [winner, setWinner] = useState(null);
 
-
+  //update the boardvalue array if the user selection is valid and change the turn
   const setValue = (index, turn) =>{
       if(boardValues[index] === ' ' && turn === 1){
         boardValues[index]='X';
@@ -64,7 +63,7 @@ function Board() {
     setTurn(1);
   }
   return (
-    <Container className={classes.board}>
+    <Container sx={{ bgcolor: 'secondary.main' }}  className={classes.board}>
       <Grid container spacing={2}>
           {boardValues.map((value, index)=>(
             <Grid item  key={index} xs={4} onClick={()=> setValue(index, turn)}>
