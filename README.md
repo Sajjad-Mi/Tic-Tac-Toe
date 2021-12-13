@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup and Requirements
+
+For running this code you need npm package manager which you can install and use by installing [node.js](https://nodejs.org/en/download) then use this command:
+```
+git clone https://github.com/Sajjad-Mi/IE-ex3.git
+npm install 
+```
+then you can use [Available Scripts](#Available-Scripts)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
