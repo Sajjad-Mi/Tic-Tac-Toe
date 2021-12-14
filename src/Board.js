@@ -8,13 +8,13 @@ import GameInfo from './GameInfo'
 
 const useStyles=makeStyles({
   board:{
-    height: 850,
+    height: 620,
     margin: '200px auto',
     borderRadius: 5
   },
   item:{
-    height:180,
-    paddingTop: 50,
+    height:120,
+    paddingTop: 20,
     borderRadius: 5
   }
 
@@ -63,8 +63,8 @@ function Board() {
     setTurn(1);
   }
   return (
-    <Container sx={{ bgcolor: 'secondary.main' }}  className={classes.board}>
-      <Grid container spacing={2}>
+    <Container maxWidth={'sm'} sx={{ bgcolor: 'secondary.main' }}  className={classes.board}>
+      <Grid container  spacing={2}>
           {boardValues.map((value, index)=>(
             <Grid item  key={index} xs={4} onClick={()=> setValue(index, turn)}>
               <Typography  sx={{ bgcolor: 'primary.main' }} variant='h1' className={classes.item} noWrap>{value}</Typography>
